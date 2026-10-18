@@ -1,63 +1,246 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ceylon Spice Catering</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-    <h1>Ceylon Spice Catering</h1>
-    <img src="Screenshot 2026-09-30 094546.png" alt="Ceylon" width="200">
-    <nav>
-    <a href="test.html">Start</a>
+
+<header>
+  <!-- BILD: Euer Logo (am besten mit transparentem Hintergrund, Quadrat, min. 300x300px) -->
+  <img class="logo" src="Screenshot 2026-09-30 094546.png" alt="Ceylon Spice Logo">
+  <h1>Ceylon Spice Catering</h1>
+  <p>Tamilisch-Sri-Lankisches Catering für jeden Anlass</p>
+
+  <nav>
+    <a href="start.html">Start</a>
     <a href="ueberuns.html">Über Uns</a>
+    <a href="Speisekarte.html">Speisekarte</a>
+    <a href="galerie.html">Galerie</a>
     <a href="bestellen.html">Bestellen</a>
-    </nav>
-    </header>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+</header>
 
-     <main>
+<main>
 
+  <!-- ===================== HERO ===================== -->
+  <section id="hero">
+    <!-- BILD: Großes, stimmungsvolles Querformat-Foto eines gedeckten Festessens auf Bananenblatt (euer bestes Foto!) -->
+    <img src="srilanske-prilohy-1-768x439.jpg" alt="Sri-lankisches Festessen auf einem Bananenblatt" width="800">
+    <h2>Tamilisch-Sri-Lankisches Catering</h2>
+    <p>Würzig. Authentisch. Für jeden Anlass.</p>
+  </section>
 
-    <section>
-      <img src="srilanske-prilohy-1-768x439.jpg" alt="Sri-lankisches Festessen auf einem Bananenblatt" width="600">
-      <h2>Tamilisch-Sri-Lankisches Catering</h2>
-      <p>Würzig. Authentisch. Für jeden Anlass.</p>
-    </section>
+  <!-- ===================== INTRO ===================== -->
+  <section id="intro">
+    <!-- BILD: Foto vom Koch/Team beim Kochen oder Anrichten (zeigt Professionalität und Handwerk) -->
+    <img src="1792049596258-zubereitung-haende.png" alt="Zubereitung der Speisen in der Küche" width="500">
+    <p>
+      Wir bringen die Aromen von Jaffna und Tamil Nadu direkt zu deiner Feier.
+      Von würzigem Kottu Rotti bis zu zarten String Hoppers – frisch zubereitet
+      für Hochzeiten, Geburtstage und Firmenevents.
+    </p>
+  </section>
 
+  <!-- ===================== SPEISEKARTE ===================== -->
+  <section id="speisekarte">
+    <h2>Unsere Klassiker</h2>
 
-    <section>
-      <p>
-        Wir bringen die Aromen von Jaffna und Tamil Nadu direkt zu deiner Feier.
-        Von würzigem Kottu Rotti bis zu zarten String Hoppers – frisch zubereitet
-        für Hochzeiten, Geburtstage und Firmenevents.
-      </p>
+    <article class="dish">
+      <img src="1664424964588.jpg" alt="Kottu Rotti" width="500">
+      <h3>Kottu Roti</h3>
+      <p>Frisch geschnittenes Roti, gefüllt mit knackigem Gemüse und aromatischen Gewürzen –
+        wahlweise mit zartem Hähnchen, saftigem Lamm oder in einer köstlichen vegetarischen Variante.</p>
+      <p class="price">Ab 9,90 € pro Portion</p>
 
-    </section>
-        <h2>Unsere Klassiker</h2>
-        
-        
-        <div class="dish">
-            <img src="1664424964588.jpg" alt="Kottu rotti" width="600">
-            <h3>Kottu Roti</h3>
-            <P>Frisch geschnittener Rotti mit Gemüse und Gewürzen. Ab 9,90 €</P>
-            <label for="menge">Menge:</label>
-            <input type="number" id="menge" name="menge" min="10" max="150" value="10">
-        </div>
-            
+      <label for="menge-kottu">Menge (Portionen):</label>
+      <input type="number" id="menge-kottu" name="menge-kottu" min="10" max="150" value="10" step="1">
+    </article>
 
-        <div class="dish">
-            <img src="dish-string-hoppers.png" alt="Idiyappam" width="600"> 
-            <h3>String Hoppers</h3>
-            <p>Reismehl-Nester mit Kokos Sambol und Dhal curry. Ab 8,50€</p>
-            <label for="menge">Menge:</label>
-            <input type="number" id="menge" name="menge" min="10" max="150" value="10">
-        </div>
+    <article class="dish">
+      <img src="dish-string-hoppers.png" alt="Idiyappam / String Hoppers" width="500">
+      <h3>String Hoppers</h3>
+      <p>Zarte Reismehl-Nester, hauchdünn und sanft gedämpft, serviert mit frisch geriebenem
+        Kokos-Sambol und einem cremigen, aromatischen Dhal-Curry.</p>
+      <p>Mild, bekömmlich und zu 100&nbsp;% vegan – ein Gericht, das Leichtigkeit und Würze auf
+        eine wunderbar harmonische Weise vereint.</p>
+      <p class="price">Ab 8,50 € pro Portion</p>
 
+      <label for="menge-string">Menge (Portionen):</label>
+      <input type="number" id="menge-string" name="menge-string" min="10" max="150" value="10" step="1">
+    </article>
 
-    </section>
-        
+    <article class="dish">
+      <img src="1790666917318-dish-crab-curry.png" alt="Crab Curry" width="500">
+      <h3>Crab Curry</h3>
+      <p>Frische Krabben in einer würzigen, feurig-roten Kokos-Curry-Sauce mit Kurkuma, Chili
+        und Curryblättern.</p>
+      <p>Mit einem Hauch Tamarinde abgerundet – herzhaft, würzig und am besten mit den Händen
+        genossen.</p>
+      <p class="price">Ab 10,00 € pro Portion</p>
+
+      <label for="menge-crab">Menge (Portionen):</label>
+      <input type="number" id="menge-crab" name="menge-crab" min="10" max="150" value="10" step="1">
+    </article>
+
+    <!-- NEUES GERICHT 1 -->
+    <article class="dish">
+      <!-- BILD: Foto von Mango-Lassi oder Chai (Getränk) -->
+      <img src="1792049594783-mango-lassi.png" alt="Mango Lassi" width="500">
+      <h3>Mango Lassi</h3>
+      <p>Erfrischender Joghurt-Drink mit süßer Mangopüree, verfeinert mit einer Prise Kardamom
+        – der perfekte Abschluss zu würzigen Gerichten.</p>
+      <p class="price">Ab 3,50 € pro Glas</p>
+
+      <label for="menge-lassi">Menge (Gläser):</label>
+      <input type="number" id="menge-lassi" name="menge-lassi" min="10" max="150" value="10" step="1">
+    </article>
+
+    <!-- NEUES GERICHT 2 -->
+    <article class="dish">
+      <!-- BILD: Foto von Watalappam (Dessert, kleine Schüsselchen) -->
+      <img src="1792049593158-watalappam.png" alt="Watalappam" width="500">
+      <h3>Watalappam</h3>
+      <p>Traditioneller sri-lankischer Pudding aus Kokosmilch, Jaggery (Palmzucker) und
+        Kardamom, verfeinert mit gerösteten Cashewkernen.</p>
+      <p class="price">Ab 4,00 € pro Portion</p>
+
+      <label for="menge-watalappam">Menge (Portionen):</label>
+      <input type="number" id="menge-watalappam" name="menge-watalappam" min="10" max="150" value="10" step="1">
+    </article>
+
+  </section>
+
+  <!-- ===================== ANLÄSSE ===================== -->
+  <section id="anlaesse">
+    <h2>Für welchen Anlass?</h2>
+    <ul>
+      <li>
+        <!-- BILD: Hochzeitsdeko / festlich gedeckter Tisch -->
+        <img src="1792050036191-hochzeit.png" alt="Catering bei einer Hochzeit" width="300">
+        <span class="anlass-label">Hochzeiten</span>
+      </li>
+      <li>
+        <!-- BILD: Firmenfeier / Buffet im Büro -->
+        <img src="1792050037629-firmenevent.png" alt="Catering bei einem Firmenevent" width="300">
+        <span class="anlass-label">Firmenevents</span>
+      </li>
+      <li>
+        <!-- BILD: Geburtstagsfeier mit Buffet -->
+        <img src="1792050037352-geburtstag.png" alt="Catering bei einer Geburtstagsfeier" width="300">
+        <span class="anlass-label">Geburtstage</span>
+      </li>
+      <li>
+        <!-- BILD: Religiöses/kulturelles Fest, z.B. Pongal oder Diwali-Tisch -->
+        <img src="1792050037743-kulturfest.png" alt="Catering bei einem kulturellen Fest" width="300">
+        <span class="anlass-label">Kulturelle Feste</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ===================== SO FUNKTIONIERT'S (echter Ablauf, daher Nummerierung sinnvoll) ===================== -->
+  <section id="ablauf">
+    <h2>So läuft deine Bestellung ab</h2>
+    <ol>
+      <li>Speisekarte durchstöbern und Portionen auswählen</li>
+      <li>Bestellformular ausfüllen und Wunschtermin angeben</li>
+      <li>Wir melden uns innerhalb von 24 Stunden mit einem Angebot</li>
+      <li>Frische Zubereitung und Lieferung am gewünschten Tag</li>
+    </ol>
+  </section>
+
+  <!-- ===================== GALERIE ===================== -->
+  <section id="galerie">
+    <h2>Impressionen</h2>
+    <!-- BILD: Nahaufnahme von Gewürzen (Kurkuma, Chili, Kardamom in Schälchen) -->
+    <img src="1792049595602-gewuerze-nahaufnahme.png" alt="Gewürze Nahaufnahme" width="300">
+    <!-- BILD: Hände, die Roti schneiden / Gericht anrichten -->
+    <img src="1792049596258-zubereitung-haende.png" alt="Zubereitung von Hand" width="300">
+    <!-- BILD: Gäste, die bei einer Feier essen (mit Einverständnis fotografiert) -->
+    <img src="1792049943249-gaeste-beim-essen.png" alt="Gäste genießen das Buffet" width="300">
+    <!-- BILD: Angerichtetes Buffet in voller Breite -->
+    <img src="1792049594847-buffet-gesamt.png" alt="Vollständig angerichtetes Buffet" width="300">
+  </section>
+
+  <!-- ===================== KUNDENSTIMMEN ===================== -->
+  <section id="kundenstimmen">
+    <h2>Das sagen unsere Kunden</h2>
+    <blockquote>
+      <p>"Das beste Catering, das wir je für eine Hochzeit hatten – alle Gäste haben nach dem Rezept gefragt!"</p>
+      <footer>— Priya &amp; Thileepan, Hochzeit in Köln</footer>
+    </blockquote>
+    <blockquote>
+      <p>"Pünktlich, freundlich und geschmacklich auf höchstem Niveau. Unser Firmenevent war ein voller Erfolg."</p>
+      <footer>— Lisa M., Teamleitung Marketing</footer>
+    </blockquote>
+  </section>
+
+  <!-- ===================== BESTELLFORMULAR ===================== -->
+  <section id="bestellformular">
+    <h2>Bestellung aufgeben</h2>
+    <form action="#" method="post">
+
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">E-Mail:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="telefon">Telefonnummer:</label><br>
+      <input type="tel" id="telefon" name="telefon"><br><br>
+
+      <label for="datum">Gewünschtes Datum:</label><br>
+      <input type="date" id="datum" name="datum" required><br><br>
+
+      <label for="anlass">Art des Anlasses:</label><br>
+      <select id="anlass" name="anlass">
+        <option value="hochzeit">Hochzeit</option>
+        <option value="firmenevent">Firmenevent</option>
+        <option value="geburtstag">Geburtstag</option>
+        <option value="kulturfest">Kulturelles Fest</option>
+        <option value="sonstiges">Sonstiges</option>
+      </select><br><br>
+
+      <label for="gaeste">Anzahl der Gäste:</label><br>
+      <input type="number" id="gaeste" name="gaeste" min="10" max="500"><br><br>
+
+      <label for="nachricht">Anmerkungen / Allergien:</label><br>
+      <textarea id="nachricht" name="nachricht" rows="4" cols="40"></textarea><br><br>
+
+      <button type="submit">Bestellung absenden</button>
+    </form>
+  </section>
+
+  <!-- ===================== FAQ ===================== -->
+  <section id="faq">
+    <h2>Häufige Fragen</h2>
+    <dl>
+      <dt>Wie weit im Voraus muss ich bestellen?</dt>
+      <dd>Für Veranstaltungen ab 30 Personen empfehlen wir mindestens 2 Wochen Vorlauf.</dd>
+
+      <dt>Könnt ihr auf Allergien eingehen?</dt>
+      <dd>Ja, bitte trage alle Unverträglichkeiten im Bestellformular ein, wir passen die Gerichte individuell an.</dd>
+
+      <dt>Liefert ihr auch außerhalb von Köln?</dt>
+      <dd>Ja, gegen einen Aufpreis liefern wir im gesamten Rheinland.</dd>
+    </dl>
+  </section>
+
+</main>
+
+<footer>
+  <!-- BILD: Kleines Logo oder Icon fürs Footer -->
+  <img src="Screenshot 2026-09-30 094546.png" alt="Ceylon Spice Icon" width="60">
+  <p>Ceylon Spice Catering &mdash; Köln &mdash; Schulprojekt</p>
+  <p>
+    <a href="mailto:info@ceylonspice.de">info@ceylonspice.de</a> |
+    <a href="tel:+4912345678">+49 123 456 78</a>
+  </p>
+</footer>
 
 </body>
 </html>
