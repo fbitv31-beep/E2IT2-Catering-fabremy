@@ -1,9 +1,3 @@
-/* Ceylon Spice Catering - meine CSS Datei */
-/* Farben die ich benutze: */
-/* Gold/Gelb: #E3A008 */
-/* Rot: #C8372A */
-/* Dunkelbraun: #2B1B12 */
-/* Creme/Hintergrund: #FBF3E7 */
 
 body {
   margin: 0;
@@ -11,31 +5,19 @@ body {
   color: #2B1B12;
   font-family: Arial, sans-serif;
   font-size: 17px;
-  line-height: 1.6;
-}
-
-img {
-  max-width: 100%;
 }
 
 h1, h2, h3 {
   font-family: Georgia, serif;
-  color: #2B1B12;
 }
 
 h2 {
   font-size: 28px;
-  border-bottom: 4px solid #C8372A;
-  padding-bottom: 8px;
-  width: fit-content;
+  color: #C8372A;
 }
 
 h3 {
   font-size: 20px;
-}
-
-p {
-  margin-bottom: 10px;
 }
 
 a {
@@ -44,32 +26,16 @@ a {
 }
 
 a:hover {
-  color: #B8790A;
-  text-decoration: underline;
+  color: #E3A008;
 }
 
-/* Trenner zwischen den Abschnitten - sieht aus wie ein Kolam Punktmuster */
-/* (Kolam ist ein traditionelles Bodenmuster, passt gut zum Thema) */
-main section::before {
-  content: "";
-  display: block;
-  height: 20px;
-  margin: 0 auto 25px auto;
-  max-width: 1000px;
-  background-image: radial-gradient(circle, #E3A008 2px, transparent 2px);
-  background-size: 20px 20px;
-  background-position: center;
-  opacity: 0.5;
+img {
+  max-width: 100%;
 }
 
-main section:first-of-type::before {
-  display: none;
-}
-
-/* Header / Kopfbereich */
 header {
   background-color: #2B1B12;
-  color: #FBF3E7;
+  color: white;
   text-align: center;
   padding: 20px;
 }
@@ -82,26 +48,20 @@ header .logo {
 }
 
 header h1 {
-  color: #FBF3E7;
-  margin-top: 10px;
-  margin-bottom: 5px;
+  color: white;
 }
 
 header p {
   color: #E3A008;
-  font-size: 13px;
-  text-transform: uppercase;
 }
 
 nav {
-  margin-top: 15px;
-  border-top: 1px solid #4A2E1E;
-  padding-top: 10px;
+  margin-top: 20px;
 }
 
 nav a {
-  color: #FBF3E7;
-  margin: 0 10px;
+  color: white;
+  margin: 10px;
   font-weight: bold;
 }
 
@@ -109,205 +69,137 @@ nav a:hover {
   color: #E3A008;
 }
 
-/* Haupt-Bereiche */
 main section {
   max-width: 1000px;
-  margin: 0 auto;
-  padding: 30px 15px;
+  margin: auto;
+  padding: 40px 20px;
 }
 
-/* Hero / grosses Bild oben */
 #hero {
   text-align: center;
-  max-width: 100%;
-  padding: 0;
-  position: relative;
-  color: white;
 }
 
 #hero img {
   width: 100%;
-  height: 450px;
+  height: 400px;
   object-fit: cover;
-  filter: brightness(60%);
 }
 
 #hero h2 {
-  position: absolute;
-  top: 35%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
+  color: #C8372A;
   font-size: 32px;
-  width: 80%;
 }
 
 #hero p {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #E3A008;
-  text-transform: uppercase;
-  letter-spacing: 1px;
+  color: #B8790A;
+  font-weight: bold;
 }
 
-/* Intro Text mit Bild */
 #intro {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 20px;
+  text-align: center;
 }
 
 #intro img {
   width: 350px;
-  border-radius: 8px;
+  border-radius: 10px;
 }
 
 #intro p {
-  flex: 1;
   font-size: 18px;
 }
 
-/* Speisekarte Bereich */
 #speisekarte {
   background-color: #F3E8D6;
   max-width: 100%;
 }
 
-#speisekarte .dish {
-  max-width: 1000px;
-  margin: 0 auto 20px auto;
-  background-color: #FBF3E7;
-  border: 1px solid #ddd;
-  border-radius: 10px;
+.dish {
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: white;
   padding: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
+  border-radius: 10px;
 }
 
-#speisekarte .dish img {
+.dish img {
   width: 200px;
   height: 150px;
   object-fit: cover;
   border-radius: 8px;
 }
 
-#speisekarte .dish h3 {
-  color: #9C2A20;
+.dish h3 {
+  color: #C8372A;
 }
 
-#speisekarte .dish .price {
-  font-weight: bold;
+.price {
   color: #B8790A;
-  background-color: #fcecc4;
-  padding: 3px 10px;
-  border-radius: 5px;
-}
-
-#speisekarte .dish label {
   font-weight: bold;
-  margin-right: 8px;
 }
 
-#speisekarte .dish input[type="number"] {
-  width: 80px;
+.dish input {
+  width: 70px;
   padding: 5px;
-  border: 2px solid #2B1B12;
-  border-radius: 5px;
 }
 
-/* Anlässe */
 #anlaesse ul {
   list-style: none;
-  margin: 0;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 15px;
 }
 
 #anlaesse li {
-  position: relative;
+  display: inline-block;
   width: 220px;
-  height: 200px;
-  border-radius: 10px;
-  overflow: hidden;
+  margin: 10px;
+  text-align: center;
 }
 
-#anlaesse li img {
-  width: 100%;
-  height: 100%;
+#anlaesse img {
+  width: 220px;
+  height: 180px;
   object-fit: cover;
+  border-radius: 10px;
 }
 
-#anlaesse .anlass-label {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  right: 10px;
-  color: white;
-  font-size: 18px;
+.anlass-label {
+  color: #C8372A;
   font-weight: bold;
-  background-color: rgba(0,0,0,0.5);
-  padding: 5px 8px;
-  border-radius: 5px;
-  opacity: 0;
-}
-
-#anlaesse li:hover .anlass-label {
-  opacity: 1;
-}
-
-/* Ablauf Schritte */
-#ablauf ol {
-  padding-left: 20px;
+  font-size: 18px;
 }
 
 #ablauf li {
   margin-bottom: 10px;
-  font-size: 17px;
 }
 
-/* Galerie Bilder */
+#galerie {
+  text-align: center;
+}
+
 #galerie img {
-  width: 23%;
-  margin: 0 1% 10px 0;
+  width: 220px;
   height: 180px;
   object-fit: cover;
   border-radius: 8px;
-  display: inline-block;
+  margin: 8px;
 }
 
-/* Kundenstimmen */
 #kundenstimmen {
   background-color: #2B1B12;
-  color: #FBF3E7;
+  color: white;
   max-width: 100%;
 }
 
 #kundenstimmen h2 {
-  color: #FBF3E7;
+  color: #E3A008;
 }
 
 #kundenstimmen blockquote {
-  max-width: 900px;
-  margin: 0 auto 15px auto;
-  padding: 15px 20px;
-  background-color: rgba(227,160,8,0.1);
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 15px;
   border-left: 4px solid #E3A008;
-  font-style: italic;
 }
 
-#kundenstimmen footer {
-  color: #E3A008;
-  font-size: 13px;
-  margin-top: 5px;
-}
-
-/* Bestellformular */
 #bestellformular {
   background-color: #F3E8D6;
   max-width: 100%;
@@ -315,15 +207,15 @@ main section {
 
 #bestellformular form {
   max-width: 600px;
-  margin: 0 auto;
-  background-color: #FBF3E7;
+  margin: auto;
+  background-color: white;
   padding: 25px;
   border-radius: 10px;
 }
 
 #bestellformular label {
-  font-weight: bold;
   display: block;
+  font-weight: bold;
   margin-bottom: 5px;
 }
 
@@ -333,9 +225,8 @@ main section {
   width: 100%;
   padding: 8px;
   margin-bottom: 15px;
-  border: 1px solid #ccc;
+  border: 1px solid gray;
   border-radius: 5px;
-  font-size: 16px;
 }
 
 #bestellformular button {
@@ -343,63 +234,37 @@ main section {
   padding: 12px;
   background-color: #C8372A;
   color: white;
-  font-weight: bold;
-  font-size: 16px;
   border: none;
   border-radius: 5px;
-  cursor: pointer;
+  font-size: 16px;
 }
 
 #bestellformular button:hover {
   background-color: #9C2A20;
 }
 
-#bestellformular form br {
-  display: none;
-}
-
-/* FAQ */
 #faq dt {
+  color: #C8372A;
   font-weight: bold;
-  color: #9C2A20;
-  font-size: 18px;
-  margin-top: 10px;
+  margin-top: 15px;
 }
 
 #faq dd {
-  margin: 5px 0 0 0;
+  margin-bottom: 15px;
 }
 
-/* Footer */
 footer {
   background-color: #2B1B12;
-  color: #FBF3E7;
+  color: white;
   text-align: center;
-  padding: 25px 15px;
+  padding: 25px;
 }
 
 footer img {
+  width: 70px;
   border-radius: 50%;
-  border: 2px solid #E3A008;
-  margin-bottom: 10px;
 }
 
 footer a {
   color: #E3A008;
-}
-
-/* Handy / kleine Bildschirme */
-@media (max-width: 700px) {
-  #intro {
-    flex-direction: column;
-  }
-  #intro img {
-    width: 100%;
-  }
-  #speisekarte .dish {
-    flex-direction: column;
-  }
-  #galerie img {
-    width: 48%;
-  }
 }

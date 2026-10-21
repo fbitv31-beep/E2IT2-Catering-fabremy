@@ -47,7 +47,7 @@ body {
   position: relative;
 }
 
-/* dezenter doppelter Rahmen, typisch für edle Speisekarten */
+
 .menu-card::before {
   content: "";
   position: absolute;
@@ -162,14 +162,4 @@ body {
   color: var(--wood-soft);
 }
 
-/* ---------- Responsive ---------- */
-@media (max-width: 520px) {
-  .menu-card { padding: 2.2rem 1.3rem 2rem; }
-  .menu-item-head { flex-wrap: wrap; }
-  .menu-item-head .dots { display: none; }
-  .menu-item-head h3 { flex: 1; }
-}
 
-@media (prefers-reduced-motion: reduce) {
-  * { transition: none !important; }
-}
