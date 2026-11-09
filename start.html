@@ -1,245 +1,226 @@
+
 <!DOCTYPE html>
 <html lang="de">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ceylon Spice Catering</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ceylon Spice Catering</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header>
- 
-  <img class="logo" src="   Screenshot 2026-09-30 094546.png" alt="Ceylon Spice Logo">
-  <h1>Ceylon Spice Catering</h1>
-  <p>Tamilisch-Sri-Lankisches Catering für jeden Anlass</p>
+<!-- HEADER -->
 
-  <nav>
-    <a href="start.html">Start</a>
-    <a href="ueberuns.html">Über Uns</a>
-    <a href="speisekarte.html">Speisekarte</a>
-    <a href="galerie.html">Galerie</a>
-    <a href="bestellen.html">Bestellen</a>
-    <a href="kontakt.html">Kontakt</a>
-  </nav>
+<header>
+    <div class="header">
+        <img src="Screenshot 2026-09-30 094546.png" alt="Logo">
+
+        <div>
+            <h1>Ceylon Spice</h1>
+            <p>Authentic Sri Lankan Catering</p>
+        </div>
+    </div>
+
+    <nav>
+        <a href="#start">Start</a>
+        <a href="#ueberuns">Über uns</a>
+        <a href="#speisekarte">Speisekarte</a>
+        <a href="#bestellen">Bestellen</a>
+        <a href="#kontakt">Kontakt</a>
+    </nav>
 </header>
 
 <main>
 
-  
-  <section id="hero">
-    
-    <img src="srilanske-prilohy-1-768x439.jpg" alt="Sri-lankisches Festessen auf einem Bananenblatt" width="800">
-    <h2>Tamilisch-Sri-Lankisches Catering</h2>
-    <p>Würzig. Authentisch. Für jeden Anlass.</p>
-  </section>
+    <!-- STARTSEITE -->
 
- 
-  <section id="intro">
-    
-    <img src="1792049596258-zubereitung-haende.png" alt="Zubereitung der Speisen in der Küche" width="500">
-    <p>
-      Wir bringen die Aromen von Jaffna und Tamil Nadu direkt zu deiner Feier.
-      Von würzigem Kottu Rotti bis zu zarten String Hoppers – frisch zubereitet
-      für Hochzeiten, Geburtstage und Firmenevents.
-    </p>
-  </section>
+    <section id="start" class="hero">
+        <img src="srilanske-prilohy-1-768x439.jpg" alt="Sri-lankisches Essen">
 
-  
-  <section id="speisekarte">
-    <h2>Unsere Klassiker</h2>
+        <div class="hero-text">
+            <p class="welcome">WILLKOMMEN BEI CEYLON SPICE</p>
+            <h2>Ein Geschmack von Sri Lanka</h2>
+            <p>Traditionelle tamilisch-sri-lankische Küche für besondere Momente.</p>
+            <a href="#speisekarte" class="button">Unsere Speisekarte</a>
+        </div>
+    </section>
 
-    <article class="dish">
-      <img src="1664424964588.jpg" alt="Kottu Rotti" width="500">
-      <h3>Kottu Roti</h3>
-      <p>Frisch geschnittenes Roti, gefüllt mit knackigem Gemüse und aromatischen Gewürzen –
-        wahlweise mit zartem Hähnchen, saftigem Lamm oder in einer köstlichen vegetarischen Variante.</p>
-      <p class="price">Ab 9,90 € pro Portion</p>
 
-      <label for="menge-kottu">Menge (Portionen):</label>
-      <input type="number" id="menge-kottu" name="menge-kottu" min="10" max="150" value="10" step="1">
-    </article>
+    <!-- ÜBER UNS -->
 
-    <article class="dish">
-      <img src="dish-string-hoppers.png" alt="Idiyappam / String Hoppers" width="500">
-      <h3>String Hoppers</h3>
-      <p>Zarte Reismehl-Nester, hauchdünn und sanft gedämpft, serviert mit frisch geriebenem
-        Kokos-Sambol und einem cremigen, aromatischen Dhal-Curry.</p>
-      <p>Mild, bekömmlich und zu 100% vegan – ein Gericht, das Leichtigkeit und Würze auf
-        eine wunderbar harmonische Weise vereint.</p>
-      <p class="price">Ab 8,50 € pro Portion</p>
+    <section id="ueberuns" class="about">
 
-      <label for="menge-string">Menge (Portionen):</label>
-      <input type="number" id="menge-string" name="menge-string" min="10" max="150" value="10" step="1">
-    </article>
+        <div class="about-image">
+            <img src="1792049596258-zubereitung-haende.png" alt="Frische Zubereitung">
+        </div>
 
-    <article class="dish">
-      <img src="1790666917318-dish-crab-curry.png" alt="Crab Curry" width="500">
-      <h3>Crab Curry</h3>
-      <p>Frische Krabben in einer würzigen, feurig-roten Kokos-Curry-Sauce mit Kurkuma, Chili
-        und Curryblättern.</p>
-      <p>Mit einem Hauch Tamarinde abgerundet – herzhaft, würzig und am besten mit den Händen
-        genossen.</p>
-      <p class="price">Ab 10,00 € pro Portion</p>
+        <div class="about-text">
+            <p class="subtitle">UNSERE LEIDENSCHAFT</p>
+            <h2>Tradition trifft Geschmack</h2>
 
-      <label for="menge-crab">Menge (Portionen):</label>
-      <input type="number" id="menge-crab" name="menge-crab" min="10" max="150" value="10" step="1">
-    </article>
+            <p>
+                Wir bringen die authentischen Aromen von Jaffna
+                und Tamil Nadu direkt zu deiner Feier.
+                Mit frischen Zutaten und traditionellen Rezepten
+                bereiten wir unsere Gerichte mit viel Liebe zu.
+            </p>
 
-    
-    <article class="dish">
-      
-      <img src="1792049594783-mango-lassi.png" alt="Mango Lassi" width="500">
-      <h3>Mango Lassi</h3>
-      <p>Erfrischender Joghurt-Drink mit süßer Mangopüree, verfeinert mit einer Prise Kardamom
-        – der perfekte Abschluss zu würzigen Gerichten.</p>
-      <p class="price">Ab 3,50 € pro Glas</p>
+            <p>
+                Ob Hochzeit, Geburtstag oder Firmenevent –
+                wir machen jeden Anlass zu einem besonderen Erlebnis.
+            </p>
 
-      <label for="menge-lassi">Menge (Gläser):</label>
-      <input type="number" id="menge-lassi" name="menge-lassi" min="10" max="150" value="10" step="1">
-    </article>
+            <a href="#bestellen" class="button">Jetzt anfragen</a>
+        </div>
 
-    
-    <article class="dish">
-      
-      <img src="1792049593158-watalappam.png" alt="Watalappam" width="500">
-      <h3>Watalappam</h3>
-      <p>Traditioneller sri-lankischer Pudding aus Kokosmilch, Jaggery (Palmzucker) und
-        Kardamom, verfeinert mit gerösteten Cashewkernen.</p>
-      <p class="price">Ab 4,00 € pro Portion</p>
+    </section>
 
-      <label for="menge-watalappam">Menge (Portionen):</label>
-      <input type="number" id="menge-watalappam" name="menge-watalappam" min="10" max="150" value="10" step="1">
-    </article>
 
-  </section>
+    <!-- SPEISEKARTE -->
 
-  
-  <section id="anlaesse">
-    <h2>Für welchen Anlass?</h2>
-    <ul>
-      <li>
-        
-        <img src="1792050036191-hochzeit.png" alt="Catering bei einer Hochzeit" width="300">
-        <span class="anlass-label">Hochzeiten</span>
-      </li>
-      <li>
-        
-        <img src="1792050037629-firmenevent.png" alt="Catering bei einem Firmenevent" width="300">
-        <span class="anlass-label">Firmenevents</span>
-      </li>
-      <li>
-        
-        <img src="1792050037352-geburtstag.png" alt="Catering bei einer Geburtstagsfeier" width="300">
-        <span class="anlass-label">Geburtstage</span>
-      </li>
-      <li>
-        
-        <img src="1792050037743-kulturfest.png" alt="Catering bei einem kulturellen Fest" width="300">
-        <span class="anlass-label">Kulturelle Feste</span>
-      </li>
-    </ul>
-  </section>
+    <section id="speisekarte" class="menu">
 
- 
-  <section id="ablauf">
-    <h2>So läuft deine Bestellung ab</h2>
-    <ol>
-      <li>Speisekarte durchstöbern und Portionen auswählen</li>
-      <li>Bestellformular ausfüllen und Wunschtermin angeben</li>
-      <li>Wir melden uns innerhalb von 24 Stunden mit einem Angebot</li>
-      <li>Frische Zubereitung und Lieferung am gewünschten Tag</li>
-    </ol>
-  </section>
+        <p class="subtitle">FRISCH UND AUTHENTISCH</p>
+        <h2>Unsere Spezialitäten</h2>
+        <p>Entdecke unsere beliebtesten Gerichte aus Sri Lanka.</p>
 
-  
-  <section id="galerie">
-    <h2>Impressionen</h2>
-   
-    <img src="1792049595602-gewuerze-nahaufnahme.png" alt="Gewürze Nahaufnahme" width="300">
-    <!-- BILD: Hände, die Roti schneiden / Gericht anrichten -->
-    <img src="1792049596258-zubereitung-haende.png" alt="Zubereitung von Hand" width="300">
-  
-    <img src="1792049943249-gaeste-beim-essen.png" alt="Gäste genießen das Buffet" width="300">
-    
-    <img src="1792049594847-buffet-gesamt.png" alt="Vollständig angerichtetes Buffet" width="300">
-  </section>
+        <div class="gerichte">
 
-  
-  <section id="kundenstimmen">
-    <h2>Das sagen unsere Kunden</h2>
-    <blockquote>
-      <p>"Das beste Catering, das wir je für eine Hochzeit hatten – alle Gäste haben nach dem Rezept gefragt!"</p>
-      <footer>— Priya ; Thileepan, Hochzeit in Köln</footer>
-    </blockquote>
-    <blockquote>
-      <p>"Pünktlich, freundlich und geschmacklich auf höchstem Niveau. Unser Firmenevent war ein voller Erfolg."</p>
-      <footer>— Lisa M., Teamleitung Marketing</footer>
-    </blockquote>
-  </section>
+            <article class="gericht">
+                <img src="1664424964588.jpg" alt="Kottu Roti">
 
-  
-  <section id="bestellformular">
-    <h2>Bestellung aufgeben</h2>
-    <form action="#" method="post">
+                <div class="gericht-text">
+                    <h3>Kottu Roti</h3>
+                    <p>Frisches Roti mit Gemüse und aromatischen Gewürzen.</p>
+                    <span>Ab 9,90 €</span>
 
-      <label for="name">Name:</label><br>
-      <input type="text" id="name" name="name" required><br><br>
+                    <label for="kottu">Menge:</label>
+                    <input type="number" id="kottu" name="kottu" min="0" max="150" value="0">
+                </div>
+            </article>
 
-      <label for="email">E-Mail:</label><br>
-      <input type="email" id="email" name="email" required><br><br>
 
-      <label for="telefon">Telefonnummer:</label><br>
-      <input type="tel" id="telefon" name="telefon"><br><br>
+            <article class="gericht">
+                <img src="dish-string-hoppers.png" alt="String Hoppers">
 
-      <label for="datum">Gewünschtes Datum:</label><br>
-      <input type="date" id="datum" name="datum" required><br><br>
+                <div class="gericht-text">
+                    <h3>String Hoppers</h3>
+                    <p>Gedämpfte Reisnudeln mit Kokos-Sambol und Dhal.</p>
+                    <span>Ab 8,50 €</span>
 
-      <label for="anlass">Art des Anlasses:</label><br>
-      <select id="anlass" name="anlass">
-        <option value="hochzeit">Hochzeit</option>
-        <option value="firmenevent">Firmenevent</option>
-        <option value="geburtstag">Geburtstag</option>
-        <option value="kulturfest">Kulturelles Fest</option>
-        <option value="sonstiges">Sonstiges</option>
-      </select><br><br>
+                    <label for="stringhoppers">Menge:</label>
+                    <input type="number" id="stringhoppers" name="stringhoppers" min="0" max="150" value="0">
+                </div>
+            </article>
 
-      <label for="gaeste">Anzahl der Gäste:</label><br>
-      <input type="number" id="gaeste" name="gaeste" min="10" max="500"><br><br>
 
-      <label for="nachricht">Anmerkungen / Allergien:</label><br>
-      <textarea id="nachricht" name="nachricht" rows="4" cols="40"></textarea><br><br>
+            <article class="gericht">
+                <img src="1790666917318-dish-crab-curry.png" alt="Crab Curry">
 
-      <button type="submit">Bestellung absenden</button>
-    </form>
-  </section>
+                <div class="gericht-text">
+                    <h3>Crab Curry</h3>
+                    <p>Frische Krabben in einer würzigen Kokos-Curry-Sauce.</p>
+                    <span>Ab 10,00 €</span>
 
-  
-  <section id="faq">
-    <h2>Häufige Fragen</h2>
-    <dl>
-      <dt>Wie weit im Voraus muss ich bestellen?</dt>
-      <dd>Für Veranstaltungen ab 30 Personen empfehlen wir mindestens 2 Wochen Vorlauf.</dd>
+                    <label for="crabcurry">Menge:</label>
+                    <input type="number" id="crabcurry" name="crabcurry" min="0" max="150" value="0">
+                </div>
+            </article>
 
-      <dt>Könnt ihr auf Allergien eingehen?</dt>
-      <dd>Ja, bitte trage alle Unverträglichkeiten im Bestellformular ein, wir passen die Gerichte individuell an.</dd>
 
-      <dt>Liefert ihr auch außerhalb von Köln?</dt>
-      <dd>Ja, gegen einen Aufpreis liefern wir im gesamten Rheinland.</dd>
-    </dl>
-  </section>
+            <article class="gericht">
+                <img src="1792049594783-mango-lassi.png" alt="Mango Lassi">
+
+                <div class="gericht-text">
+                    <h3>Mango Lassi</h3>
+                    <p>Erfrischender Joghurt-Drink mit süßer Mango.</p>
+                    <span>Ab 3,50 €</span>
+
+                    <label for="mangolassi">Menge:</label>
+                    <input type="number" id="mangolassi" name="mangolassi" min="0" max="150" value="0">
+                </div>
+            </article>
+
+
+            <article class="gericht">
+                <img src="1792049593158-watalappam.png" alt="Watalappam">
+
+                <div class="gericht-text">
+                    <h3>Watalappam</h3>
+                    <p>Traditioneller Kokospudding mit Cashewkernen.</p>
+                    <span>Ab 4,00 €</span>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+
+    <!-- BESTELLUNG -->
+
+    <section id="bestellen" class="order">
+
+        <div class="order-content">
+            <p class="subtitle">DEIN BESONDERER ANLASS</p>
+            <h2>Plane deine Feier mit uns</h2>
+
+            <p>
+                Du planst eine Hochzeit, einen Geburtstag oder ein Event?
+                Schicke uns deine Anfrage. Wir freuen uns auf dich!
+            </p>
+
+            <form action="#" method="post">
+
+                <label for="name">Dein Name</label>
+                <input type="text" id="name" name="name"
+                       placeholder="Vor- und Nachname" required>
+
+                <label for="email">E-Mail-Adresse</label>
+                <input type="email" id="email" name="email"
+                       placeholder="deine@email.de" required>
+
+                <label for="telefon">Telefonnummer</label>
+                <input type="tel" id="telefon" name="telefon">
+
+                <label for="datum">Gewünschtes Datum</label>
+                <input type="date" id="datum" name="datum" required>
+
+                <label for="gaeste">Anzahl der Gäste</label>
+                <input type="number" id="gaeste" name="gaeste"
+                       min="10" placeholder="z. B. 50">
+
+                <label for="nachricht">Deine Nachricht</label>
+                <textarea id="nachricht" name="nachricht" rows="4"
+                          placeholder="Erzähl uns von deinem Anlass oder Allergien..."></textarea>
+
+                <button type="submit">Anfrage senden</button>
+
+            </form>
+        </div>
+
+    </section>
 
 </main>
 
-<footer>
-  
-  <img src="Screenshot 2026-09-30 094546.png" alt="Ceylon Spice Icon" width="60">
-  <p>Ceylon Spice Catering  SChwäbisch Hall  </p>
-  <p>
-    <a href="mailto:info@ceylonspice.de">info@ceylonspice.de</a> |
-    <a href="tel:+0792/9469043">+49 123 456 78</a>
-  </p>
+
+<!-- FOOTER -->
+
+<footer id="kontakt">
+
+    <h2>Ceylon Spice Catering</h2>
+    <p>Traditioneller Geschmack. Mit Liebe zubereitet.</p>
+
+    <div class="footer-info">
+        <p>Schwäbisch Hall</p>
+        <p>info@ceylonspice.de</p>
+        <p>+49 123 456 78</p>
+    </div>
+
+    <p class="copyright">
+        © 2026 Ceylon Spice Catering | Alle Rechte vorbehalten
+    </p>
+
 </footer>
 
 </body>
